@@ -1,4 +1,4 @@
-const apiKey = "YOUR_PEXELS_API_KEY";
+const apiKey = "GQ3jXKM8wGlbsOJuMKNb2VHQbGcrTAIEBM0MTaoLLUdyXsPE63r82sJJ";
 const searchInput = document.getElementById("search-input");
 const searchButton = document.getElementById("search-button");
 const firstImageSection = document.getElementById("first-image");
@@ -16,7 +16,6 @@ searchButton.addEventListener("click", () => {
 });
 
 async function fetchImages(searchTerm) {
-  const apiKey = "GQ3jXKM8wGlbsOJuMKNb2VHQbGcrTAIEBM0MTaoLLUdyXsPE63r82sJJ";
   const response = await fetch(
     `https://api.pexels.com/v1/search?query=${searchTerm}`,
     {
